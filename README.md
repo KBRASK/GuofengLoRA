@@ -1,5 +1,5 @@
 # GuofengLoRA使用文档
-
+![Display set](image/shows.png)
 本项目是一个中文项目，由于作者编写相关文档经验不足，如有格式上的指导或建议欢迎在 [Issues](https://github.com/KBRASK/GuofengLoRA/issues) 中指出。
 
 ## 目录
