@@ -40,7 +40,7 @@ _本功能windows和linux可用_
 GuofengLoRA模型放在\\models\\Lora文件夹下
 
 ### 1.WebUI下使用方法
-![[example1.png]]
+![[images/example1.png]]
 进入推理工具后,左上角的Stable Diffusion模型选择刚刚放入的基础模型
 
 接下来在正向提示词部分选择扩展模型中一个版本的GuofengLoRA模型
