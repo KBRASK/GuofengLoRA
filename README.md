@@ -26,7 +26,7 @@ _本功能windows和linux可用_
 
 ### _实现该功能必备的工具有_
 1.SD1.5基础模型
-在下载lora模型前，确保你已经下载了[SD1.5的基础模型](https://huggingface.co/runwayml/stable-diffusion-v1-5/tree/main) 若只用于推理生图,下载emaonly版本即可,若用于训练LoRA模型,建议下载未修建版本的(7.7GB)
+在下载lora模型前，确保你已经下载了[SD1.5的基础模型](https://huggingface.co/runwayml/stable-diffusion-v1-5/tree/main) 若只用于推理生图,下载emaonly版本即可,若用于训练LoRA模型,建议下载未修剪版本的(7.7GB)
 
 2.推理工具
 推理工具建议使用B站up主[秋葉aaaki](https://space.bilibili.com/12566101)的[WebUI整合包](https://www.bilibili.com/video/BV1iM4y1y7oA/) 或者[ComfyUI](https://www.bilibili.com/video/BV1Ew411776J/)
