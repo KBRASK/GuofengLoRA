@@ -53,11 +53,17 @@ Sampler选择DPM++ 2M Karras
 宽度和高度都选择512像素
 
 ### ComfyUI下使用方法
-下载仓库中template中的texttoimageworkflow.json 导入即可
+
+接下来下载本仓库中template中的texttoimageworkflow.json 导入即可
 
 效果如下
 ![example2](image/example2.png)
 # 搭配SVD的使用方法
+
+先下载svd模型,下载[svd_xt.safetensors](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/tree/main)
+
+放在对应推理工具文件夹下的\\models\\Stable-diffusion内
+
 下载仓库中的template中的lorawithsvdworkflow.json导入ComfyUI即可
 
 效果如下
