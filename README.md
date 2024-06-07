@@ -69,7 +69,44 @@ Sampler选择DPM++ 2M Karras
 效果如下
 ![example3](image/example3.png)
 # 搭配Anytext的使用方法
-正在编写......
+
+_此功能能在任何系统下使用_
+
+[Anytext](https://github.com/tyxsspa/AnyText)是阿里达摩院构建并开源的多语言视觉文本生成和编辑模型
+
+其拥有在指定位置生成指定文字的强大能力,而搭配上本项目的LoRA模型即可生成高质量的带有书法文字的国风山水画。
+
+### 方法一：
+首先你要安装docker
+
+然后下载本项目的dockerimage/anytextwithlora.tar
+
+在命令行内输入
+```bash
+docker load -i anytextwithlora.tar
+
+docker run --gpus all -p 7860:7860 -w /app/anytext lorawithanytext ./run.sh
+
+```
+再次打开的时候只需要执行以下操作
+
+```bash
+docker exec -it dockerid(这里换成你的容器id) bash
+
+cd /app/anytext
+
+./run.sh
+```
+
+_容器内置了Guofeng LoRA，无需下载除docker本身外任何前置内容_
+
+启动好后在本地浏览器输入[127.0.0.1:7860](127.0.0.1:7860) 即可使用
+
+参数均已内置，可以一键生成
+
+###  方法二
+
+
 # LoRA模型训练方法
 正在编写......
 
