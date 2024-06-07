@@ -5,9 +5,9 @@
 ## 目录
 1. [简介](#简介)
 3. [GuofengLoRA使用方法](#GuofengLoRA使用方法)
-4. [LoRA模型训练方法](#LoRA模型训练方法)
-5. [搭配SVD的使用方法](#搭配SVD的使用方法)
-6. [搭配Anytext的使用方法](#搭配Anytext的使用方法)
+4. [搭配SVD的使用方法](#搭配SVD的使用方法)
+5. [搭配Anytext的使用方法](#搭配Anytext的使用方法)
+6. [LoRA模型训练方法](#LoRA模型训练方法)
 7. [技术原理](#技术原理)
 8. [开源工具致谢](#开源工具致谢)
 
@@ -55,12 +55,18 @@ Sampler选择DPM++ 2M Karras
 ### ComfyUI下使用方法
 下载仓库中template中的texttoimageworkflow.json 导入即可
 
-# LoRA模型训练方法
-正在编写......
+效果如下
+![example2](image/example2.png)
 # 搭配SVD的使用方法
-正在编写......
+下载仓库中的template中的lorawithsvdworkflow.json导入ComfyUI即可
+
+效果如下
+![example3](image/example3.png)
 # 搭配Anytext的使用方法
 正在编写......
+# LoRA模型训练方法
+正在编写......
+
 # 技术原理
 正在编写......
 # 开源工具致谢
