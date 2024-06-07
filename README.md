@@ -70,18 +70,40 @@ Sampler选择DPM++ 2M Karras
 ![example3](image/example3.png)
 # 搭配Anytext的使用方法
 
-_此功能能在任何系统下使用_
+_此功能在linux系统下使用_
 
 [Anytext](https://github.com/tyxsspa/AnyText)是阿里达摩院构建并开源的多语言视觉文本生成和编辑模型
 
 其拥有在指定位置生成指定文字的强大能力,而搭配上本项目的LoRA模型即可生成高质量的带有书法文字的国风山水画。
-###  方法一：
+### 方法一：
+首先部署[Anytext](https://github.com/tyxsspa/AnyText)（按照阿里达摩院的Anytext项目文档部署）,需要使用linux系统,推荐使用docker配置。
+
+然后下载本项目仓库的一个任意版本的Guofeng LoRA模型,可以存放在anytext文件内任意路径
+
+之后下载本项目仓库的Replace_file\\demo.py(修改了内置参数，增加了一个示例)并替换anytext文件内的demo.py
+
+下载本项目仓库中的Replace_file\\gengen.png,并移动至 AnyText\\example_images内
+
+接下来按照anytext的项目文档指引,按照其中标明的配置要求更改对应参数
+
+并执行
+```bash
+  export CUDA_VISIBLE_DEVICES=0 && python demo.py
+```
+
+在对应webui界面中修改lora地址为你刚刚存放的位置的与demo.py的相对地址即可
+
+后面的LoRA权重不建议更改,如出现丢失山水画风格的情况,请略微增大其权重。
+
+至此,AnyTextWithGuoFengLoRA部署完毕
+
 
 
 
 ### 方法二：
 
 _本方法暂时失效,由于30GB的文件不方便进行传输_
+
 首先你要安装docker
 
 
